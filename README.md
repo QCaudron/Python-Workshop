@@ -10,8 +10,9 @@ what to install.
 - 1. **Basic Python** - very quick intro to variables, control structure, lists, dictionaries, functions, IO; 
 to 
 get you on your feet.
-- 2. **Numpy, Scipy, Matplotlib** - the *Scipy Stack* which forms the basis of scientific coding in Python.
+- 2. **Numpy, Scipy, Pandas, Matplotlib** - the *Scipy Stack* which forms the basis of scientific coding in Python.
 - 3. **Demos** - lmfit, scikit-learn, scikit-image, pandas, pickle, pymc; some packages I use for cool 
 scientific work.
-- 4. **Exercises** - a Notebook helping you through some real data analysis, using real data collected during 
-my PhD.
+
+Exercises occur throughout, with tips and solutions given. For all questions, please get in 
+touch either on our [forums](princetonpy.com) or on Twitter at @PrincetonPy. 
