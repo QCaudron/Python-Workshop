@@ -1373,7 +1373,7 @@ After N/A dropping : 344 entries
 <div class=" highlight hl-ipython2"><pre><span class="c"># Let&#39;s grab the foci count in sheep with high directionality coefficients</span>
 <span class="n">high_directionality</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">Directionality</span> <span class="o">&lt;</span> <span class="mf">0.3</span><span class="p">]</span><span class="o">.</span><span class="n">FociCount</span>
 
-<span class="c"># and plot it a moving average over twenty points</span>
+<span class="c"># and plot it a moving average over ten points</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">rolling_mean</span><span class="p">(</span><span class="n">high_directionality</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 
@@ -12748,7 +12748,7 @@ ym3FTXIAAAAASUVORK5CYII=
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Coffees against time</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">Coffees</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">Coffees</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span><span class="o">.</span><span class="n">autofmt_xdate</span><span class="p">()</span>
 
 <span class="c"># Coffees on each day of the week</span>

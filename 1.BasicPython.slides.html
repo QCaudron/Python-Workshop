@@ -264,7 +264,7 @@ div.output_prompt {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;He said, &#39;what ?&#39; </span><span class="se">\n</span><span class="s">&quot;</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;He said, &#39;what ?&#39;&quot;</span>
 </pre></div>
 
 </div>
@@ -277,8 +277,7 @@ div.output_prompt {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>He said, &apos;what ?&apos; 
-
+<pre>He said, &apos;what ?&apos;
 </pre>
 </div>
 </div>
@@ -615,7 +614,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Python accesses elements in lists from 0, not from 1 as in Matlab or R. This will be familiar to C users.</p>
+<p>Python accesses elements in lists from 0, not from 1 as in Matlab or R. This will be familiar to C and Java users.</p>
 
 </div>
 </div>
@@ -1272,7 +1271,38 @@ I&apos;m done here.
 </div>
 
 </div>
-    </div></section>
+    </div><div class="fragment" data-fragment-index="49">
+        
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># Quick note - see https://www.python.org/dev/peps/pep-0238/</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="k">print</span> <span class="mi">7</span> <span class="o">/</span> <span class="mi">3</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.33333333333
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+        </div></section>
     </section><section>
     <section>
     
@@ -1300,7 +1330,7 @@ I&apos;m done here.
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Create a list of integers 0, 1, 2, 3, 4</span>
@@ -1327,11 +1357,11 @@ I&apos;m done here.
 </div>
 
 </div>
-        </div><div class="fragment" data-fragment-index="53">
+        </div><div class="fragment" data-fragment-index="54">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Let&#39;s replace the middle element</span>
@@ -1370,11 +1400,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
@@ -1410,11 +1440,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">A</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
@@ -1452,11 +1482,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">A</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
@@ -1494,11 +1524,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -1523,7 +1553,7 @@ I&apos;m done here.
 </div>
 
 </div>
-        </div><div class="fragment" data-fragment-index="53">
+        </div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1535,11 +1565,11 @@ I&apos;m done here.
 </div>
 </div>
 </div>
-        </div><div class="fragment" data-fragment-index="53">
+        </div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
@@ -1576,11 +1606,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># This will simply go from start to finish with a stride of 2</span>
@@ -1606,11 +1636,11 @@ I&apos;m done here.
 </div>
 
 </div>
-        </div><div class="fragment" data-fragment-index="66">
+        </div><div class="fragment" data-fragment-index="67">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># And this one, from the second element to finish, with a stride of 2</span>
@@ -1636,11 +1666,11 @@ I&apos;m done here.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="67">
+    </div><div class="fragment" data-fragment-index="68">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># So, uh... Reverse ?</span>
@@ -1677,11 +1707,11 @@ I&apos;m done here.
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">A</span> <span class="o">+</span> <span class="n">A</span>
@@ -1720,7 +1750,7 @@ I&apos;m done here.
 <h2 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1732,14 +1762,14 @@ I&apos;m done here.
 </div>
 </div>
 </div>
-        </div><div class="fragment" data-fragment-index="67">
+        </div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pythonPoints</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;Quentin&quot;</span> <span class="p">:</span> <span class="mf">1.</span> <span class="o">/</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;Paul&quot;</span> <span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="s">&quot;Matthew&quot;</span> <span class="p">:</span> <span class="mf">1e3</span> <span class="p">}</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">pythonPoints</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;Quentin&quot;</span> <span class="p">:</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="s">&quot;Paul&quot;</span> <span class="p">:</span> <span class="mi">42</span><span class="p">,</span> <span class="s">&quot;Matthew&quot;</span> <span class="p">:</span> <span class="mf">1e3</span> <span class="p">}</span>
 <span class="k">print</span> <span class="n">pythonPoints</span>
 </pre></div>
 
@@ -1766,7 +1796,7 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Dictionaries associate keys with values</span>
@@ -1793,11 +1823,11 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># You can access them through their keys</span>
@@ -1827,7 +1857,7 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">if</span> <span class="s">&quot;Ruthie&quot;</span> <span class="ow">in</span> <span class="n">pythonPoints</span> <span class="p">:</span>     <span class="c"># for dicts, &quot;in&quot; checks the keys</span>
@@ -1881,14 +1911,14 @@ I&apos;m done here.
 <h2 id="List-Comprehension-and-Inlines">List Comprehension and Inlines<a class="anchor-link" href="#List-Comprehension-and-Inlines">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c"># Let&#39;s build a list of elements 1^2, 2^2, 3^2, ..., 10^2</span>
+<div class=" highlight hl-ipython2"><pre><span class="c"># Let&#39;s build a list of elements 1^2, 2^2, ..., 5^2</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)]</span>
 
 <span class="k">print</span> <span class="n">y</span>
@@ -1917,16 +1947,18 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Want to keep your index ? Use a dictionary.</span>
 <span class="n">squares</span> <span class="o">=</span> <span class="p">{</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">}</span>
 
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">squares</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">:</span>
+    <span class="k">print</span> <span class="s">&quot;</span><span class="si">%d</span><span class="s"> : </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+    
 <span class="c"># Also useful : zip()</span>
 <span class="c"># for key, val in zip(squares.keys(), squares.values()) :</span>
-    <span class="k">print</span> <span class="s">&quot;</span><span class="si">%d</span><span class="s"> : </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+<span class="c">#     print &quot;%d : %d&quot; % (key, val)</span>
 </pre></div>
 
 </div>
@@ -1956,15 +1988,16 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># We can inline if statements too</span>
 <span class="k">print</span> <span class="mi">42</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">else</span> <span class="mi">32</span>
 
 <span class="c"># Note this is interpreted as </span>
-<span class="c"># print (something)</span>
-<span class="c"># and (something) is the result of the if statement evaluation</span>
+<span class="c"># print (something if a, else print something_else)</span>
+<span class="c"># and not</span>
+<span class="c"># (print something) if a, else (do something_else)</span>
 </pre></div>
 
 </div>
@@ -1997,11 +2030,11 @@ I&apos;m done here.
 <h2 id="Functions">Functions<a class="anchor-link" href="#Functions">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Fibonacci numbers</span>
@@ -2041,7 +2074,7 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Testing :</span>
@@ -2092,7 +2125,7 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">printFib</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">:</span>
@@ -2103,11 +2136,11 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">printFib</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
@@ -2149,7 +2182,7 @@ I&apos;m done here.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># I stole this one from Learn Python The Hard Way ( highly recommended ) :</span>
@@ -2175,7 +2208,7 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="67">
+</div><div class="fragment" data-fragment-index="68">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2187,11 +2220,11 @@ I&apos;m done here.
 </div>
 </div>
 </div>
-        </div><div class="fragment" data-fragment-index="90">
+        </div><div class="fragment" data-fragment-index="91">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Written on-the-fly, because I got mad skills</span>
@@ -2231,7 +2264,7 @@ Wait, this really worked
 <h2 id="File-IO">File IO<a class="anchor-link" href="#File-IO">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="90">
+</div><div class="fragment" data-fragment-index="91">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2243,21 +2276,24 @@ Wait, this really worked
 </div>
 </div>
 </div>
-        </div><div class="fragment" data-fragment-index="90">
+        </div><div class="fragment" data-fragment-index="91">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;example.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">myfile</span> <span class="p">:</span>
     <span class="k">print</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
     
-<span class="c"># There are other options instead of looping over each line. You can instead use myfile.read().</span>
-<span class="c"># Writing : you can dump a variable using myfile.write() after having opened it in &quot;w&quot; mode.</span>
+<span class="c"># There are other options instead of looping over each line. </span>
+<span class="c"># You can instead use myfile.read().</span>
+<span class="c"># Writing : you can dump a variable using myfile.write() </span>
+<span class="c"># after having opened it in &quot;w&quot; mode.</span>
 
-<span class="c"># There are many other ways to read and write files, including ways to read and write CSV directly.</span>
+<span class="c"># There are many other ways to read and write files, </span>
+<span class="c"># including ways to read and write CSV directly.</span>
 </pre></div>
 
 </div>
@@ -2297,7 +2333,7 @@ Four, definitely four.
 <h2 id="Syntax-Exercises">Syntax Exercises<a class="anchor-link" href="#Syntax-Exercises">&#182;</a></h2>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="90">
+</div><div class="fragment" data-fragment-index="91">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2308,7 +2344,7 @@ Four, definitely four.
 </div>
 </div>
 </div>
-        </div><div class="fragment" data-fragment-index="90">
+        </div><div class="fragment" data-fragment-index="91">
         
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2344,7 +2380,7 @@ Four, definitely four.
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">A</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -2369,11 +2405,11 @@ Four, definitely four.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="98">
+</div><div class="fragment" data-fragment-index="99">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">A</span><span class="p">]</span>
@@ -2399,11 +2435,11 @@ Four, definitely four.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="99">
+    </div><div class="fragment" data-fragment-index="100">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">B</span> <span class="o">+=</span> <span class="n">B</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -2429,11 +2465,11 @@ Four, definitely four.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="100">
+    </div><div class="fragment" data-fragment-index="101">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">addflip</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span> <span class="p">:</span>
