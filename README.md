@@ -15,4 +15,4 @@ get you on your feet.
 scientific work.
 
 Exercises occur throughout, with tips and solutions given. For all questions, please get in 
-touch either on our [forums](princetonpy.com) or on Twitter at @PrincetonPy. 
+touch either on our [forums](http://princetonpy.com) or on Twitter at @PrincetonPy. 
