@@ -385,7 +385,7 @@ div.output_prompt {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">s</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span> <span class="o">+</span> <span class="mi">7</span><span class="p">)</span>
-<span class="c"># Neither statement modify the variable.</span>
+<span class="c"># Neither statement modifies the variable.</span>
 </pre></div>
 
 </div>
@@ -466,7 +466,8 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This statement is equivalent to saying <code>s = s + 2**3</code>, it's just shorthand. Also works with <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>**=</code></p>
+<p>This statement is equivalent to saying <code>s = s + 2**3</code>, it's just shorthand. Also works with</p>
+<p><code>-=</code>, <code>*=</code>, <code>/=</code>, <code>**=</code></p>
 
 </div>
 </div>
@@ -605,6 +606,7 @@ True
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Python accesses elements in lists from 0, not from 1 as in Matlab or R. This will be familiar to C and Java users.</p>
+<p><code>.append</code> is a <em>method</em> of the list class - it's a function that belongs to the list object, and so you can call it directly from the object itself. This particular function appends something to the end of the list.</p>
 
 </div>
 </div>
@@ -690,7 +692,19 @@ Reversed ! [&apos;We can mix types !&apos;, 2.41341, 1]
 </div>
 </div>
 
-</div></section>
+</div><div class="fragment" data-fragment-index="24">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Any thoughts on why <code>len()</code> is a global function in Python, and not a method of the <code>list</code> object ?</p>
+
+</div>
+</div>
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -791,7 +805,7 @@ Finished
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="30">
+</div><div class="fragment" data-fragment-index="31">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1026,7 +1040,7 @@ We can see this, it&apos;s not in the if statement.
     <span class="nb">print</span><span class="p">(</span><span class="s">&quot;BIG CLICK, outer loop change to {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">outer</span><span class="p">))</span>
     
     <span class="k">for</span> <span class="n">inner</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;*little click*, outer is {}, and inner is {}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">outer</span><span class="p">,</span> <span class="n">inner</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;*little click*, outer is still {}, and inner is {}.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">outer</span><span class="p">,</span> <span class="n">inner</span><span class="p">))</span>
         
 <span class="nb">print</span><span class="p">(</span><span class="s">&quot;I&#39;m done here.&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1042,15 +1056,15 @@ We can see this, it&apos;s not in the if statement.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>BIG CLICK, outer loop change to 1
-*little click*, outer is 1, and inner is 0.
-*little click*, outer is 1, and inner is 1.
-*little click*, outer is 1, and inner is 2.
-*little click*, outer is 1, and inner is 3.
+*little click*, outer is still 1, and inner is 0.
+*little click*, outer is still 1, and inner is 1.
+*little click*, outer is still 1, and inner is 2.
+*little click*, outer is still 1, and inner is 3.
 BIG CLICK, outer loop change to 2
-*little click*, outer is 2, and inner is 0.
-*little click*, outer is 2, and inner is 1.
-*little click*, outer is 2, and inner is 2.
-*little click*, outer is 2, and inner is 3.
+*little click*, outer is still 2, and inner is 0.
+*little click*, outer is still 2, and inner is 1.
+*little click*, outer is still 2, and inner is 2.
+*little click*, outer is still 2, and inner is 3.
 I&apos;m done here.
 </pre>
 </div>
@@ -1066,7 +1080,7 @@ I&apos;m done here.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here, we used <code>range()</code> with two arguments. It generates a list from the first argument to the second argument minus 1. Also, note that we can feed the <code>print</code> statement several things to print, separated by a comma. Again, we can use brackets if we want for <code>print</code>.</p>
+<p>Here, we used <code>range()</code> with two arguments. In Python 2, it generates a list from the first argument to the second argument minus 1. In Python 3, it returns an immutable iterable, but you can cast it to a list by calling something like <code>list(range(5))</code>. Also, note that we can feed the <code>print</code> function several things to print, separated by a comma.</p>
 
 </div>
 </div>
@@ -1090,7 +1104,7 @@ I&apos;m done here.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Beware of integer division. Unlike R, Python doesn't assume that everything is a float unless explicitly told; it recognises that <code>2</code> is an integer, and this can be good and bad.</p>
+<p>Beware of integer division with Python 2. Unlike R, Python 2 doesn't assume that everything is a float unless explicitly told; it recognises that <code>2</code> is an integer, and this can be good and bad. In Python 3, we don't need to worry about this; the following code was run under a Python 3 kernel, but test it under Python 2 to see the difference.</p>
 
 </div>
 </div>
@@ -1124,7 +1138,7 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="46">
+</div><div class="fragment" data-fragment-index="47">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1169,7 +1183,9 @@ I&apos;m done here.
 <span class="c"># Py3 : 2.3333</span>
 
 <span class="c"># In Python 2, operations between same type gives the same type :</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">7</span><span class="o">//</span><span class="mi">3</span><span class="p">))</span> <span class="c"># uh oh</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">7</span> <span class="o">/</span> <span class="mi">3</span><span class="p">))</span>
+<span class="c"># Py2 : &lt;type &#39;int&#39;&gt;</span>
+<span class="c"># Py3 : &lt;class &#39;float&#39;&gt;</span>
 </pre></div>
 
 </div>
@@ -1183,7 +1199,7 @@ I&apos;m done here.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>2.3333333333333335
-&lt;class &apos;int&apos;&gt;
+&lt;class &apos;float&apos;&gt;
 </pre>
 </div>
 </div>
@@ -1191,7 +1207,7 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="48">
+</div><div class="fragment" data-fragment-index="49">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1227,14 +1243,14 @@ I&apos;m done here.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="48">
+    </div><div class="fragment" data-fragment-index="49">
         
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># Quick note - see https://www.python.org/dev/peps/pep-0238/</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># Quick note for Py2 users - see https://www.python.org/dev/peps/pep-0238/</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
@@ -1314,7 +1330,7 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="53">
+</div><div class="fragment" data-fragment-index="54">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1579,7 +1595,7 @@ I&apos;m done here.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="66">
+</div><div class="fragment" data-fragment-index="67">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1609,7 +1625,7 @@ I&apos;m done here.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="67">
+    </div><div class="fragment" data-fragment-index="68">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1721,7 +1737,7 @@ I&apos;m done here.
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;Paul&apos;: 42, &apos;Matthew&apos;: 1000.0, &apos;Quentin&apos;: 0.3333333333333333}
+<pre>{&apos;Quentin&apos;: 0.3333333333333333, &apos;Paul&apos;: 42, &apos;Matthew&apos;: 1000.0}
 </pre>
 </div>
 </div>
@@ -1751,8 +1767,8 @@ I&apos;m done here.
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>dict_keys([&apos;Paul&apos;, &apos;Matthew&apos;, &apos;Quentin&apos;])
-dict_values([42, 1000.0, 0.3333333333333333])
+<pre>dict_keys([&apos;Quentin&apos;, &apos;Paul&apos;, &apos;Matthew&apos;])
+dict_values([0.3333333333333333, 42, 1000.0])
 </pre>
 </div>
 </div>
@@ -1887,7 +1903,7 @@ dict_values([42, 1000.0, 0.3333333333333333])
 <span class="n">squares</span> <span class="o">=</span> <span class="p">{</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">}</span>
 
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">squares</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;{} : {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;{} squared is {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">))</span>
     
 <span class="c"># Also useful : zip()</span>
 <span class="c"># for key, val in zip(squares.keys(), squares.values()) :</span>
@@ -1904,12 +1920,12 @@ dict_values([42, 1000.0, 0.3333333333333333])
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0 : 0
-1 : 1
-2 : 4
-3 : 9
-4 : 16
-5 : 25
+<pre>0 squared is 0
+1 squared is 1
+2 squared is 4
+3 squared is 9
+4 squared is 16
+5 squared is 25
 </pre>
 </div>
 </div>
@@ -1973,10 +1989,8 @@ dict_values([42, 1000.0, 0.3333333333333333])
 <span class="c"># OH NO RECURSION</span>
 
 <span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
     <span class="k">else</span> <span class="p">:</span>
         <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
     
@@ -2114,7 +2128,7 @@ dict_values([42, 1000.0, 0.3333333333333333])
 <div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c"># I stole this one from Learn Python The Hard Way ( highly recommended ) :</span>
+<div class=" highlight hl-ipython3"><pre><span class="c"># I modified this one from Learn Python The Hard Way ( highly recommended ) :</span>
 <span class="n">formatstring</span> <span class="o">=</span> <span class="s">&quot;Start {} {}&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">formatstring</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">formatstring</span><span class="p">,</span> <span class="n">formatstring</span><span class="p">))</span>
 </pre></div>
@@ -2147,7 +2161,7 @@ dict_values([42, 1000.0, 0.3333333333333333])
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="90">
+</div><div class="fragment" data-fragment-index="91">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2324,7 +2338,7 @@ Four, definitely four.
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="98">
+</div><div class="fragment" data-fragment-index="99">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2354,7 +2368,7 @@ Four, definitely four.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="99">
+    </div><div class="fragment" data-fragment-index="100">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2384,7 +2398,7 @@ Four, definitely four.
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="100">
+    </div><div class="fragment" data-fragment-index="101">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
